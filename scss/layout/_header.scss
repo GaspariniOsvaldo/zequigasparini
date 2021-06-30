@@ -1,0 +1,98 @@
+@import "../utilities/variables";
+
+header {
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 10vh;
+    background: nth($paleta, 1);
+    z-index: 1000;
+
+    h1 {
+        order: 2;
+        margin: 0 1vw;
+        font-family: nth($fuente, 1);
+        font-weight: 700;
+    }
+
+    #btn__nav {
+        display: none;
+    }
+    
+    label {
+        margin: 0 10px .3vh;
+    }
+
+    nav {
+        background-color: nth($paleta, 3);
+    }
+    .navLateral {
+        background-color: nth($paleta, 3);
+        overflow: hidden;
+
+        .navLateral__body {
+            ul {
+                padding: 0;
+
+                li {
+                    display: block;
+                    width: 150%;
+                    font-family: Montserrat, serif;
+                    font-size: 2rem;
+                    margin: 0;
+                    padding: 30px 10%;
+                    color: nth($paleta, 1);
+                    transition: transform 1s ease-in;
+
+                    &:hover {
+                        background-color: darken(nth($paleta, 3), 20%);
+                        transform: translateX(20px);
+                        transition: transform 2s ease;
+
+                        ul {
+                            visibility: visible;
+                            opacity: 1;
+                            transition: opacity .8s ease;
+                        }
+                    }
+                    ul {
+                        position: absolute;
+                        margin-top: 20px;
+                        left: 0px;
+                        visibility: hidden;
+                        opacity: 0;
+                        background-color: darken(nth($paleta, 3), 20%);
+                        transition: opacity 2s ease;
+                        width: 100%;
+                        padding-left: 1px;
+
+                        li {
+                            &:hover {
+                                outline: nth($paleta, 1) 1px solid;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 30px;
+            right: 20px;
+
+            img {
+                margin: 0 10px;
+                width: 30px;
+                transition: transform 1s ease;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(2);
+                    transition: transform 1s ease;
+                }
+            }
+        }
+    }
+}

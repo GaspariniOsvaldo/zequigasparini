@@ -1,0 +1,61 @@
+@import "../utilities/variables";
+
+/* Mixins de MediaQuery */
+
+@mixin media($media) {
+  @if $media == xs {
+    @media (max-width: $breakpoint-sm) { @content; } /* El original */
+  }
+  @else if $media == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
+  }
+  @else if $media == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
+  }
+  @else if $media == lg {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+}
+
+@mixin media__2disp($media) { 
+    @if $media == sm {
+        @media (max-width: $breakpoint-sm) { @content; }
+    }
+    @else if $media == md {
+        @media (min-width: $breakpoint-sm) { @content; }
+    }
+}
+
+@mixin desc_blog($f_family, $f_weight, $f_size, $margin) {
+  font-family: $f_family, serif;
+  font-size: $f_size;
+  font-weight: $f_weight;
+  margin: 2vh $margin 0;
+  text-align: center;
+}
+
+/* Extend de titulares */
+%fuente_m {
+  font-family: nth($fuente, 1), serif;
+}
+
+%fuente_general {
+  @extend %fuente_m;
+  color: nth($paleta, 1);
+}
+
+
+@mixin info__bio($font){
+  font-family: nth($fuente, $font);
+  padding: 5vh 0;
+  margin: 0;
+  text-align: center;
+  color: nth($paleta, 1);
+}
+
+
+/* Mixin contacto */
+ %label_form {
+   @extend %fuente_general;
+   font-size: 1rem;
+ }

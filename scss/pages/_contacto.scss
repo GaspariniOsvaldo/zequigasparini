@@ -1,0 +1,77 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.contacto__main {
+    
+    background-color: nth($paleta, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+    .contacto__container {
+        width: 90vw;
+        max-width: 1440px;
+        overflow-x: hidden;
+        background-color: nth($paleta, 4);
+
+        h2 {
+            @extend %fuente_general;
+            font-size: 2rem;
+            padding: 2rem;
+        }
+
+        .contacto__grid {
+
+            .contacto__grid--form {
+
+                form {
+                    padding: 1rem;
+
+                    input, button, textarea {
+                        width: 100%;
+                        margin: 5px;
+                        background: none;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid nth($paleta, 2);
+                    }
+
+                    textarea {
+                        min-height: 100px;
+                        resize: none;
+                    }
+
+                    label, button {
+                        @extend %label_form;
+                    }
+                }
+            }
+
+            .contacto__grid--info {
+                background-color: #000;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+
+                h3 {
+                    @extend %fuente_general;
+                    font-size: 2rem;
+                    padding: 2rem 0;
+                }
+
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        @extend %fuente_general;
+                        font-size: 1rem;
+                        padding: .5rem 0;
+                    }
+                }
+            }
+        }
+    }
+}

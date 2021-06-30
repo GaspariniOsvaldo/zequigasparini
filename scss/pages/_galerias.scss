@@ -1,0 +1,22 @@
+.main__galeria {
+    background-color: nth($paleta, 4);
+
+    .container__galeria--carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+    
+    .carousel__galeria {
+        max-height: 90vh;
+    }
+
+    .carousel-item {
+        img {
+            
+            max-height: 90vh;
+            object-fit: scale-down;
+        }
+    }
+}

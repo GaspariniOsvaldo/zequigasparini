@@ -1,0 +1,435 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited, a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 10vh;
+  background: #f0f5f9;
+  z-index: 1000;
+}
+header h1 {
+  order: 2;
+  margin: 0 1vw;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+header #btn__nav {
+  display: none;
+}
+header label {
+  margin: 0 10px 0.3vh;
+}
+header nav {
+  background-color: #52616b;
+}
+header .navLateral {
+  background-color: #52616b;
+  overflow: hidden;
+}
+header .navLateral .navLateral__body ul {
+  padding: 0;
+}
+header .navLateral .navLateral__body ul li {
+  display: block;
+  width: 150%;
+  font-family: Montserrat, serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 30px 10%;
+  color: #f0f5f9;
+  transition: transform 1s ease-in;
+}
+header .navLateral .navLateral__body ul li:hover {
+  background-color: #262d31;
+  transform: translateX(20px);
+  transition: transform 2s ease;
+}
+header .navLateral .navLateral__body ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+header .navLateral .navLateral__body ul li ul {
+  position: absolute;
+  margin-top: 20px;
+  left: 0px;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #262d31;
+  transition: opacity 2s ease;
+  width: 100%;
+  padding-left: 1px;
+}
+header .navLateral .navLateral__body ul li ul li:hover {
+  outline: #f0f5f9 1px solid;
+}
+header .navLateral footer {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
+header .navLateral footer img {
+  margin: 0 10px;
+  width: 30px;
+  transition: transform 1s ease;
+  cursor: pointer;
+}
+header .navLateral footer img:hover {
+  transform: scale(2);
+  transition: transform 1s ease;
+}
+
+/* Mixins de MediaQuery */
+/* Extend de titulares */
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  font-family: Montserrat, serif;
+}
+
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  color: #f0f5f9;
+}
+
+/* Mixin contacto */
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  font-size: 1rem;
+}
+
+main .index__section {
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+main .index__section .carousel__intro {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  filter: blur(2px);
+}
+main .index__section .carousel__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .index__section .carousel__text a {
+  background-color: rgba(30, 32, 34, 0.7);
+  border-radius: 20px;
+  padding: 20px;
+  font-family: Montserrat, serif;
+  font-size: 2rem;
+  color: #f0f5f9;
+}
+main .index__section-intro {
+  background-color: #52616b;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 767px) {
+  main .index__section-intro .carousel__intro--mobile {
+    display: block;
+  }
+  main .index__section-intro .carousel__intro--desktop {
+    display: none;
+  }
+}
+@media (min-width: 767px) {
+  main .index__section-intro .carousel__intro--mobile {
+    display: none;
+  }
+  main .index__section-intro .carousel__intro--desktop {
+    display: block;
+  }
+}
+
+.main__galeria {
+  background-color: #1e2022;
+}
+.main__galeria .container__galeria--carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.main__galeria .carousel__galeria {
+  max-height: 90vh;
+}
+.main__galeria .carousel-item img {
+  max-height: 90vh;
+  object-fit: scale-down;
+}
+
+/* Mixins de MediaQuery */
+/* Extend de titulares */
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  font-family: Montserrat, serif;
+}
+
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  color: #f0f5f9;
+}
+
+/* Mixin contacto */
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  font-size: 1rem;
+}
+
+.blog__main .container__blog {
+  background-color: #c9d6df;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.blog__main .container__blog .articulo__blog {
+  height: 90vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img" "desc";
+  justify-items: center;
+  align-items: center;
+  border-bottom: #1e2022 1px solid;
+  padding: 5vh 0 20vh 0;
+}
+.blog__main .container__blog .articulo__blog img {
+  grid-area: img;
+  max-width: 90vw;
+  max-height: 50vh;
+}
+.blog__main .container__blog .articulo__blog .articulo__blog--descripcion {
+  grid-area: desc;
+  display: flex;
+  margin: 20px 10px 0;
+  padding: 10px 10px;
+  flex-flow: column nowrap;
+  background-color: #f0f5f9;
+  border-radius: 20px;
+}
+.blog__main .container__blog .articulo__blog .articulo__blog--descripcion .blog__h2 {
+  background-color: #c9d6df;
+  border-radius: 20px;
+  padding: 5px 5px 15px;
+}
+.blog__main .container__blog .articulo__blog .articulo__blog--descripcion .blog__h2 h2 {
+  font-family: Montserrat, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2vh 0 0;
+  text-align: center;
+}
+.blog__main .container__blog .articulo__blog .articulo__blog--descripcion p {
+  font-family: Merriweather, serif;
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin: 2vh 5vw 0;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Mixins de MediaQuery */
+/* Extend de titulares */
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  font-family: Montserrat, serif;
+}
+
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  color: #f0f5f9;
+}
+
+/* Mixin contacto */
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  font-size: 1rem;
+}
+
+@keyframes btn_mov {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+.bio__container {
+  background-color: #000;
+}
+.bio__container .bio__intro {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.bio__container .bio__intro img {
+  width: 100vw;
+  max-width: 1300px;
+  height: 90vh;
+  object-fit: cover;
+}
+.bio__container .bio__intro a {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100vw;
+  height: 2vh;
+  display: flex;
+  justify-content: center;
+}
+.bio__container .bio__intro a img {
+  object-fit: contain;
+  width: 50px;
+  height: 50px;
+  animation-name: btn_mov;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-delay: 0;
+}
+.bio__container .bio__info {
+  padding: 0 5vw;
+}
+.bio__container .bio__info h2 {
+  font-family: Montserrat;
+  padding: 5vh 0;
+  margin: 0;
+  text-align: center;
+  color: #f0f5f9;
+  font-weight: 700;
+}
+.bio__container .bio__info p {
+  font-family: Merriweather;
+  padding: 5vh 0;
+  margin: 0;
+  text-align: center;
+  color: #f0f5f9;
+  margin: 0;
+  padding: 5vh 0;
+}
+
+/* Mixins de MediaQuery */
+/* Extend de titulares */
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  font-family: Montserrat, serif;
+}
+
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  color: #f0f5f9;
+}
+
+/* Mixin contacto */
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  font-size: 1rem;
+}
+
+.contacto__main {
+  background-color: #c9d6df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.contacto__main .contacto__container {
+  width: 90vw;
+  max-width: 1440px;
+  overflow-x: hidden;
+  background-color: #1e2022;
+}
+.contacto__main .contacto__container h2 {
+  font-size: 2rem;
+  padding: 2rem;
+}
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form {
+  padding: 1rem;
+}
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form input, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form textarea {
+  width: 100%;
+  margin: 5px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #c9d6df;
+}
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form textarea {
+  min-height: 100px;
+  resize: none;
+}
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info {
+  background-color: #000;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info h3 {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul {
+  padding: 0;
+  margin: 0;
+}
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+.error404__main {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.error404__main h1 {
+  font-family: Montserrat, serif;
+  font-size: 10rem;
+  background-color: #c9d6df;
+  border-radius: 100px;
+  padding: 1%;
+}
+@media (max-width: 767px) {
+  .error404__main h1 {
+    font-size: 4rem;
+  }
+}
+.error404__main h2 {
+  font-family: Montserrat, serif;
+  font-weight: 700;
+  text-align: center;
+}
+.error404__main a {
+  background-color: #c9d6df;
+  padding: 2%;
+  border-radius: 20px;
+  margin: 5% 0;
+}
+
+/*# sourceMappingURL=style.css.map */

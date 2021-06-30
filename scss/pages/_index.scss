@@ -1,0 +1,60 @@
+@import "../utilities/mixins";
+
+main {
+
+    .index__section {
+        height: 90vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+        .carousel__intro {
+            height: 100vh;
+            width: 100vw;
+            object-fit: cover;
+            filter: blur(2px);
+        }
+
+        .carousel__text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                background-color: rgba(nth($paleta,4), $alpha: .7);
+                border-radius: 20px;
+                padding: 20px;
+                font-family: Montserrat, serif;
+                font-size: 2rem;
+                color: nth($paleta, 1);
+            }
+        }
+    }
+
+    .index__section-intro {
+        background-color: nth($paleta, 3);
+        background-size: cover;
+        background-position: center;
+
+        @include media__2disp(sm) {
+            .carousel__intro--mobile {
+                display: block;
+            }
+            .carousel__intro--desktop {
+                display: none;
+            }
+        }
+        @include media__2disp(md) {
+            .carousel__intro--mobile {
+                display: none;
+            }
+            .carousel__intro--desktop {
+                display: block;
+            }
+        }
+    }
+}
