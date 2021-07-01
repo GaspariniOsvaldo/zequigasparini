@@ -1,11 +1,8 @@
 {
-  "name": "proyecto_final_3.0",
-  "version": "1.0.0",
-  "description": "",
+  "name": "zequigasparini",
+  "version": "3.0.1",
+  "description": "Proyecto final del curso de desarrollo web de Coderhouse, sitio web de fotografia",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "author": "https://www.linkedin.com/in/gaspariniosvaldo/",
   "license": "ISC"
 }
