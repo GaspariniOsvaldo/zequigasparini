@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Osvaldo</h1>
 <h3 align="center">A passionate frontend developer from Argentina</h3>
 
-- 🌱 I’m currently learning **full stack**
+- 🌱 I’m currently learning **Javascript**
 
 - 📫 How to reach me **gaspariniosvaldo1@gmail.com**
 
