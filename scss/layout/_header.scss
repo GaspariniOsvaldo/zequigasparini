@@ -1,4 +1,5 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
 header {
     width: 100vw;
@@ -19,10 +20,6 @@ header {
     #btn__nav {
         display: none;
     }
-    
-    label {
-        margin: 0 10px .3vh;
-    }
 
     nav {
         background-color: nth($paleta, 3);
@@ -36,44 +33,32 @@ header {
                 padding: 0;
 
                 li {
-                    display: block;
-                    width: 150%;
-                    font-family: Montserrat, serif;
-                    font-size: 2rem;
-                    margin: 0;
-                    padding: 30px 10%;
-                    color: nth($paleta, 1);
-                    transition: transform 1s ease-in;
+                    @extend %nav_li;
 
                     &:hover {
-                        background-color: darken(nth($paleta, 3), 20%);
-                        transform: translateX(20px);
-                        transition: transform 2s ease;
-
-                        ul {
-                            visibility: visible;
-                            opacity: 1;
-                            transition: opacity .8s ease;
-                        }
-                    }
-                    ul {
-                        position: absolute;
-                        margin-top: 20px;
-                        left: 0px;
-                        visibility: hidden;
-                        opacity: 0;
-                        background-color: darken(nth($paleta, 3), 20%);
-                        transition: opacity 2s ease;
-                        width: 100%;
-                        padding-left: 1px;
-
-                        li {
-                            &:hover {
-                                outline: nth($paleta, 1) 1px solid;
-                            }
-                        }
+                         @extend %nav_li--hover;
                     }
                 }
+            }
+            label {
+                @extend %nav_li;
+
+                &:hover {
+                    @extend %nav_li--hover;
+               }
+            }
+            input {
+                display: none;
+
+                &:checked {
+                    ~ .submenu__items {
+                        display: block;
+                    }
+                }
+            }
+            .submenu__items {
+                display: none;
+                background-color: nth($paleta, 4);
             }
         }
 

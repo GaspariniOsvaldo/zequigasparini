@@ -53,6 +53,24 @@
   color: nth($paleta, 1);
 }
 
+/* Menu lateral */
+%nav_li {
+  display: block;
+  width: 150%;
+  font-family: Montserrat, serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 30px 10%;
+  color: nth($paleta, 1);
+  transition: transform 1s ease-in;
+}
+
+%nav_li--hover {
+  background-color: darken(nth($paleta, 3), 20%);
+  transform: translateX(20px);
+  transition: transform 2s ease;
+}
+
 
 /* Mixin contacto */
  %label_form {

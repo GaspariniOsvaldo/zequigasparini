@@ -21,6 +21,39 @@ a:visited, a:hover {
   text-decoration: none;
 }
 
+/* Mixins de MediaQuery */
+/* Extend de titulares */
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  font-family: Montserrat, serif;
+}
+
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  color: #f0f5f9;
+}
+
+/* Menu lateral */
+header .navLateral .navLateral__body label, header .navLateral .navLateral__body ul li {
+  display: block;
+  width: 150%;
+  font-family: Montserrat, serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 30px 10%;
+  color: #f0f5f9;
+  transition: transform 1s ease-in;
+}
+
+header .navLateral .navLateral__body label:hover, header .navLateral .navLateral__body ul li:hover {
+  background-color: #262d31;
+  transform: translateX(20px);
+  transition: transform 2s ease;
+}
+
+/* Mixin contacto */
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  font-size: 1rem;
+}
+
 header {
   width: 100vw;
   display: flex;
@@ -39,9 +72,6 @@ header h1 {
 header #btn__nav {
   display: none;
 }
-header label {
-  margin: 0 10px 0.3vh;
-}
 header nav {
   background-color: #52616b;
 }
@@ -52,39 +82,15 @@ header .navLateral {
 header .navLateral .navLateral__body ul {
   padding: 0;
 }
-header .navLateral .navLateral__body ul li {
+header .navLateral .navLateral__body input {
+  display: none;
+}
+header .navLateral .navLateral__body input:checked ~ .submenu__items {
   display: block;
-  width: 150%;
-  font-family: Montserrat, serif;
-  font-size: 2rem;
-  margin: 0;
-  padding: 30px 10%;
-  color: #f0f5f9;
-  transition: transform 1s ease-in;
 }
-header .navLateral .navLateral__body ul li:hover {
-  background-color: #262d31;
-  transform: translateX(20px);
-  transition: transform 2s ease;
-}
-header .navLateral .navLateral__body ul li:hover ul {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.8s ease;
-}
-header .navLateral .navLateral__body ul li ul {
-  position: absolute;
-  margin-top: 20px;
-  left: 0px;
-  visibility: hidden;
-  opacity: 0;
-  background-color: #262d31;
-  transition: opacity 2s ease;
-  width: 100%;
-  padding-left: 1px;
-}
-header .navLateral .navLateral__body ul li ul li:hover {
-  outline: #f0f5f9 1px solid;
+header .navLateral .navLateral__body .submenu__items {
+  display: none;
+  background-color: #1e2022;
 }
 header .navLateral footer {
   position: absolute;
@@ -110,6 +116,24 @@ header .navLateral footer img:hover {
 
 .contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   color: #f0f5f9;
+}
+
+/* Menu lateral */
+header .navLateral .navLateral__body ul li, header .navLateral .navLateral__body label {
+  display: block;
+  width: 150%;
+  font-family: Montserrat, serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 30px 10%;
+  color: #f0f5f9;
+  transition: transform 1s ease-in;
+}
+
+header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral__body label:hover {
+  background-color: #262d31;
+  transform: translateX(20px);
+  transition: transform 2s ease;
 }
 
 /* Mixin contacto */
@@ -196,6 +220,24 @@ main .index__section-intro {
   color: #f0f5f9;
 }
 
+/* Menu lateral */
+header .navLateral .navLateral__body ul li, header .navLateral .navLateral__body label {
+  display: block;
+  width: 150%;
+  font-family: Montserrat, serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 30px 10%;
+  color: #f0f5f9;
+  transition: transform 1s ease-in;
+}
+
+header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral__body label:hover {
+  background-color: #262d31;
+  transform: translateX(20px);
+  transition: transform 2s ease;
+}
+
 /* Mixin contacto */
 .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   font-size: 1rem;
@@ -261,6 +303,24 @@ main .index__section-intro {
 
 .contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   color: #f0f5f9;
+}
+
+/* Menu lateral */
+header .navLateral .navLateral__body ul li, header .navLateral .navLateral__body label {
+  display: block;
+  width: 150%;
+  font-family: Montserrat, serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 30px 10%;
+  color: #f0f5f9;
+  transition: transform 1s ease-in;
+}
+
+header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral__body label:hover {
+  background-color: #262d31;
+  transform: translateX(20px);
+  transition: transform 2s ease;
 }
 
 /* Mixin contacto */
@@ -341,6 +401,24 @@ main .index__section-intro {
 
 .contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   color: #f0f5f9;
+}
+
+/* Menu lateral */
+header .navLateral .navLateral__body ul li, header .navLateral .navLateral__body label {
+  display: block;
+  width: 150%;
+  font-family: Montserrat, serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 30px 10%;
+  color: #f0f5f9;
+  transition: transform 1s ease-in;
+}
+
+header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral__body label:hover {
+  background-color: #262d31;
+  transform: translateX(20px);
+  transition: transform 2s ease;
 }
 
 /* Mixin contacto */
