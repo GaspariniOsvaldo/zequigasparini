@@ -151,6 +151,7 @@ main .index__section .carousel__intro {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
+  object-position: center;
   filter: blur(2px);
 }
 main .index__section .carousel__text {
@@ -175,22 +176,6 @@ main .index__section-intro {
   background-color: #52616b;
   background-size: cover;
   background-position: center;
-}
-@media (max-width: 767px) {
-  main .index__section-intro .carousel__intro--mobile {
-    display: block;
-  }
-  main .index__section-intro .carousel__intro--desktop {
-    display: none;
-  }
-}
-@media (min-width: 767px) {
-  main .index__section-intro .carousel__intro--mobile {
-    display: none;
-  }
-  main .index__section-intro .carousel__intro--desktop {
-    display: block;
-  }
 }
 
 .main__galeria {

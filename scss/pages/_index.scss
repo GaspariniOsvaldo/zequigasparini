@@ -12,6 +12,7 @@ main {
             height: 100vh;
             width: 100vw;
             object-fit: cover;
+            object-position: center;
             filter: blur(2px);
         }
 
@@ -39,22 +40,5 @@ main {
         background-color: nth($paleta, 3);
         background-size: cover;
         background-position: center;
-
-        @include media__2disp(sm) {
-            .carousel__intro--mobile {
-                display: block;
-            }
-            .carousel__intro--desktop {
-                display: none;
-            }
-        }
-        @include media__2disp(md) {
-            .carousel__intro--mobile {
-                display: none;
-            }
-            .carousel__intro--desktop {
-                display: block;
-            }
-        }
     }
 }
