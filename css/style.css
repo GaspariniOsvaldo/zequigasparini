@@ -188,11 +188,13 @@ main .index__section-intro {
   height: 90vh;
   max-width: 1400px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .main__galeria .carousel__galeria {
   max-height: 80vh;
 }
 .main__galeria .carousel-item img {
+  width: 100%;
   max-height: 90vh;
   object-fit: scale-down;
 }

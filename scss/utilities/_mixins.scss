@@ -2,21 +2,6 @@
 
 /* Mixins de MediaQuery */
 
-@mixin media($media) {
-  @if $media == xs {
-    @media (max-width: $breakpoint-sm) { @content; } /* El original */
-  }
-  @else if $media == sm {
-    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
-  }
-  @else if $media == md {
-    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
-  }
-  @else if $media == lg {
-    @media (min-width: $breakpoint-lg) { @content; }
-  }
-}
-
 @mixin media__2disp($media) { 
     @if $media == sm {
         @media (max-width: $breakpoint-sm) { @content; }

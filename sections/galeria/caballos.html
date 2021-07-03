@@ -90,10 +90,19 @@
                 </div>
                 <div class="carousel-inner carousel__galeria">
                   <div class="carousel-item active">
-                    <img src="../../media/images/animal/caballo_rancho.jpg" class="d-block w-100" alt="Caballo en rancho">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="../../media/images/animal/caballo_rancho_sm.jpg">
+                        <source media="(max-width: 992px)" srcset="../../media/images/animal/caballo_rancho_md.jpg">
+                        <img src="../../media/images/animal/caballo_rancho_lg.jpg" alt="Caballo en un rancho">
+                    </picture>
                   </div>
                   <div class="carousel-item">
                     <img src="../../media/images/animal/caballo_montado.jpg" class="d-block w-100" alt="Caballo con un campesino" loading="lazy">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="../../media/images/animal/caballo_rancho_sm.jpg">
+                        <source media="(max-width: 992px)" srcset="../../media/images/animal/caballo_rancho_md.jpg">
+                        <img src="../../media/images/animal/caballo_rancho_lg.jpg" alt="Caballo en un rancho">
+                    </picture>
                   </div>
                   <div class="carousel-item">
                     <img src="../../media/images/animal/caballo_corriendo.jpg" class="d-block w-100" alt="Caballo corriendo" loading="lazy">
