@@ -90,13 +90,25 @@
                 </div>
                 <div class="carousel-inner carousel__galeria">
                   <div class="carousel-item active">
-                    <img src="../../media/images/animal/ardilla_presalto_lg.jpg" class="d-block w-100" alt="Ardilla en un arbol antes de saltar">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="../../media/images/animal/ardilla_presalto_sm.jpg">
+                        <source media="(max-width: 992px)" srcset="../../media/images/animal/ardilla_presalto_md.jpg">
+                        <img src="../../media/images/animal/ardilla_presalto_lg.jpg" alt="Ardilla a punto de saltar de un arbol">
+                    </picture>
                   </div>
                   <div class="carousel-item">
-                    <img src="../../media/images/naturaleza/naturaleza_arbol_lg.jpg" class="d-block w-100" alt="Arbol grande" loading="lazy">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="../../media/images/naturaleza/naturaleza_arbol_sm.jpg">
+                        <source media="(max-width: 992px)" srcset="../../media/images/naturaleza/naturaleza_arbol_md.jpg">
+                        <img src="../../media/images/naturaleza/naturaleza_arbol_lg.jpg" loading="lazy" alt="Arbol en medio del campo">
+                    </picture>
                   </div>
                   <div class="carousel-item">
-                    <img src="../../media/images/naturaleza/naturaleza_campo_lg.jpg" class="d-block w-100" alt="Campo abierto" loading="lazy">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="../../media/images/naturaleza/naturaleza_campo_sm.jpg">
+                        <source media="(max-width: 992px)" srcset="../../media/images/naturaleza/naturaleza_campo_md.jpg">
+                        <img src="../../media/images/naturaleza/naturaleza_campo_lg.jpg" loading="lazy" alt="Atardecer en el campo">
+                    </picture>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel__galeria--bodas" data-bs-slide="prev">

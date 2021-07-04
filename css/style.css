@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 li {
@@ -152,7 +153,6 @@ main .index__section .carousel__intro {
   width: 100vw;
   object-fit: cover;
   object-position: center;
-  filter: blur(2px);
 }
 main .index__section .carousel__text {
   position: absolute;
@@ -333,12 +333,13 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
 }
 .bio__container .bio__intro {
   height: 90vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
 .bio__container .bio__intro img {
   width: 100vw;
-  max-width: 1300px;
+  max-width: 1400px;
   height: 90vh;
   object-fit: cover;
 }

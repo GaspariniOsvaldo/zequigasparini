@@ -81,9 +81,12 @@
 
     <main class="bio__main">
         <div class="bio__container">
-
             <div class="bio__intro">
-                <img src="../media/images/bio/zequi_gasparini.png" alt="El fotografo Zequi Gasparini">
+                <picture>
+                    <source media="(max-width: 576px)" srcset="../media/images/bio/zequi_gasparini_sm.jpg">
+                    <source media="(max-width: 992px)" srcset="../media/images/bio/zequi_gasparini_md.jpg">
+                    <img src="../media/images/bio/zequi_gasparini_lg.jpg" alt="Retrato de Zequi Gasparini">
+                </picture>
                 <a href="#info"><img src="../media/icons/chevron-down.svg" alt="Flecha para bajar hacia la biografia"></a>
             </div>
 
