@@ -1,8 +1,18 @@
 {
   "name": "zequigasparini",
-  "version": "3.0.1",
+  "version": "3.0.5",
   "description": "Proyecto final del curso de desarrollo web de Coderhouse, sitio web de fotografia",
+  "homepage": "https://gaspariniosvaldo.github.io/zequigasparini/",
+  "bugs": {"email": "gaspariniosvaldo1@gmail.com"},
   "main": "index.js",
-  "author": "https://www.linkedin.com/in/gaspariniosvaldo/",
+  "repository": {"type": "git", "url": "https://github.com/GaspariniOsvaldo/zequigasparini.git"},
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.11"},
+  "scripts": {
+    "build-css": "node-sass --include-path scss/main.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": {"name": "Gasparini Osvaldo", "email": "gaspariniosvaldo1@gmail.com", "url": "https://www.linkedin.com/in/gaspariniosvaldo/"},
   "license": "ISC"
 }
