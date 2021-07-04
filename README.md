@@ -17,6 +17,6 @@
 
 <h3 align="left">About the repo:</h3>
 <p align="left">
-Este es mi proyecto final en el curso de desarrollo web en Coderhouse, trata de un sitio web sobre el trabajo com fotografo de Ezequiel Gasparini, uno de los mejores fotografos de Argentina.
+Este es mi proyecto final para el curso de desarrollo web en Coderhouse, trata de un sitio web sobre el trabajo com fotografo de Ezequiel Gasparini, uno de los mejores fotografos de Argentina.
 Hago uso del preprocesador SASS, el framework Bootstrap y un poco de PHP
 </p>
