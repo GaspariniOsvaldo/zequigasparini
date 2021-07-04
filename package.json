@@ -5,6 +5,7 @@
   "homepage": "https://gaspariniosvaldo.github.io/zequigasparini/",
   "bugs": {"email": "gaspariniosvaldo1@gmail.com"},
   "main": "index.js",
+  "repository": {"type": "git", "url": "https://github.com/GaspariniOsvaldo/zequigasparini.git"},
   "devDependencies": {
     "node-sass": "^4.7.2",
     "nodemon": "^1.14.11"},
