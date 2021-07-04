@@ -24,6 +24,7 @@ header {
     nav {
         background-color: nth($paleta, 3);
     }
+
     .navLateral {
         background-color: nth($paleta, 3);
         overflow: hidden;
@@ -36,26 +37,29 @@ header {
                     @extend %nav_li;
 
                     &:hover {
-                         @extend %nav_li--hover;
+                        @extend %nav_li--hover;
                     }
                 }
             }
+
             label {
                 @extend %nav_li;
 
                 &:hover {
                     @extend %nav_li--hover;
-               }
+                }
             }
+
             input {
                 display: none;
 
                 &:checked {
-                    ~ .submenu__items {
+                    ~.submenu__items {
                         display: block;
                     }
                 }
             }
+
             .submenu__items {
                 display: none;
                 background-color: nth($paleta, 4);

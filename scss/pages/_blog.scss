@@ -1,7 +1,7 @@
 @import "../utilities/mixins";
 
 .blog__main {
-    
+
     .container__blog {
         background-color: nth($paleta, 2);
         width: 100vw;
@@ -13,7 +13,7 @@
             display: grid;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr;
-            grid-template-areas: "img" "desc";
+            grid-template-areas: "img""desc";
             justify-items: center;
             align-items: center;
             border-bottom: nth($paleta, 4) 1px solid;
@@ -24,7 +24,7 @@
                 max-width: 90vw;
                 max-height: 50vh;
             }
-            
+
             .articulo__blog--descripcion {
                 grid-area: desc;
                 display: flex;
@@ -38,13 +38,14 @@
                     background-color: nth($paleta, 2);
                     border-radius: 20px;
                     padding: 5px 5px 15px;
-                    
+
                     h2 {
                         @include desc_blog(Montserrat, 700, 1.5rem, 0);
                     }
                 }
+
                 p {
-                    @include desc_blog(Merriweather, 100, .9rem, 5vw);   
+                    @include desc_blog(Merriweather, 100, .9rem, 5vw);
                     max-width: 800px;
                 }
             }

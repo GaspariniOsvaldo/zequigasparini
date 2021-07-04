@@ -1,5 +1,17 @@
 @keyframes btn_mov {
-    0%{transform: translateY(-50%);}
-    50%{transform: translateY(0%)};
-    100%{transform: translateY(-50%)};
+    0% {
+        transform: translateY(-50%);
+    }
+
+    50% {
+        transform: translateY(0%)
+    }
+
+    ;
+
+    100% {
+        transform: translateY(-50%)
+    }
+
+    ;
 }

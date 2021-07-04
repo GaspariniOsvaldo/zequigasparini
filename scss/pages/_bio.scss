@@ -17,6 +17,7 @@
             height: 90vh;
             object-fit: cover;
         }
+
         a {
             position: absolute;
             bottom: 50px;
@@ -25,7 +26,7 @@
             height: 2vh;
             display: flex;
             justify-content: center;
-            
+
             img {
                 object-fit: contain;
                 width: 50px;
@@ -38,9 +39,9 @@
             }
         }
     }
-    
 
-    
+
+
     .bio__info {
         padding: 0 5vw;
 
@@ -48,6 +49,7 @@
             @include info__bio(1);
             font-weight: 700;
         }
+
         p {
             @include info__bio(2);
             margin: 0;

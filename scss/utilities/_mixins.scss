@@ -2,13 +2,18 @@
 
 /* Mixins de MediaQuery */
 
-@mixin media__2disp($media) { 
-    @if $media == sm {
-        @media (max-width: $breakpoint-sm) { @content; }
+@mixin media__2disp($media) {
+  @if $media==sm {
+    @media (max-width: $breakpoint-sm) {
+      @content;
     }
-    @else if $media == md {
-        @media (min-width: $breakpoint-sm) { @content; }
+  }
+
+  @else if $media==md {
+    @media (min-width: $breakpoint-sm) {
+      @content;
     }
+  }
 }
 
 @mixin desc_blog($f_family, $f_weight, $f_size, $margin) {
@@ -30,7 +35,7 @@
 }
 
 
-@mixin info__bio($font){
+@mixin info__bio($font) {
   font-family: nth($fuente, $font);
   padding: 5vh 0;
   margin: 0;
@@ -58,7 +63,7 @@
 
 
 /* Mixin contacto */
- %label_form {
-   @extend %fuente_general;
-   font-size: 1rem;
- }
+%label_form {
+  @extend %fuente_general;
+  font-size: 1rem;
+}

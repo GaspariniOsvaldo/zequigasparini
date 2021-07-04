@@ -24,11 +24,13 @@ a:visited, a:hover {
 
 /* Mixins de MediaQuery */
 /* Extend de titulares */
-.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   font-family: Montserrat, serif;
 }
 
-.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   color: #f0f5f9;
 }
 
@@ -51,7 +53,8 @@ header .navLateral .navLateral__body label:hover, header .navLateral .navLateral
 }
 
 /* Mixin contacto */
-.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   font-size: 1rem;
 }
 
@@ -111,11 +114,13 @@ header .navLateral footer img:hover {
 
 /* Mixins de MediaQuery */
 /* Extend de titulares */
-.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   font-family: Montserrat, serif;
 }
 
-.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   color: #f0f5f9;
 }
 
@@ -138,7 +143,8 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
 }
 
 /* Mixin contacto */
-.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   font-size: 1rem;
 }
 
@@ -201,11 +207,13 @@ main .index__section-intro {
 
 /* Mixins de MediaQuery */
 /* Extend de titulares */
-.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   font-family: Montserrat, serif;
 }
 
-.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   color: #f0f5f9;
 }
 
@@ -228,7 +236,8 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
 }
 
 /* Mixin contacto */
-.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   font-size: 1rem;
 }
 
@@ -286,11 +295,13 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
 
 /* Mixins de MediaQuery */
 /* Extend de titulares */
-.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   font-family: Montserrat, serif;
 }
 
-.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   color: #f0f5f9;
 }
 
@@ -313,7 +324,8 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
 }
 
 /* Mixin contacto */
-.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   font-size: 1rem;
 }
 
@@ -385,11 +397,13 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
 
 /* Mixins de MediaQuery */
 /* Extend de titulares */
-.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   font-family: Montserrat, serif;
 }
 
-.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--info ul li, .contacto__main .contacto__container .contacto__grid .contacto__grid--info h3, .contacto__main .contacto__container h2, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   color: #f0f5f9;
 }
 
@@ -412,7 +426,8 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
 }
 
 /* Mixin contacto */
-.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form label,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
   font-size: 1rem;
 }
 
@@ -436,7 +451,9 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
 .contacto__main .contacto__container .contacto__grid .contacto__grid--form form {
   padding: 1rem;
 }
-.contacto__main .contacto__container .contacto__grid .contacto__grid--form form input, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form button, .contacto__main .contacto__container .contacto__grid .contacto__grid--form form textarea {
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form input,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form textarea {
   width: 100%;
   margin: 5px;
   background: none;
