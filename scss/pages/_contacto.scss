@@ -37,6 +37,14 @@
                         outline: none;
                         border: none;
                         border-bottom: 1px solid nth($paleta, 2);
+                        color: nth($paleta, 2);
+                        font-weight: 700;
+                        font-family: nth($fuente, 1);
+
+                        &:focus {
+                            background: rgba(#fff, 0.1);
+                            border-radius: 5px;
+                        }
                     }
 
                     textarea {
@@ -47,6 +55,18 @@
                     label,
                     button {
                         @extend %label_form;
+                    }
+
+                    button {
+                        transition: all .8s ease-out;
+
+                        &:hover {
+                            background: rgba(#fff, 0.8);
+                            color: #000;
+                            transition: all .8s ease;
+                            padding: 0 5px;
+                            border-radius: 5px;
+                        }
                     }
                 }
             }

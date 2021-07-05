@@ -17,12 +17,14 @@ header {
         font-weight: 700;
     }
 
-    #btn__nav {
-        display: none;
-    }
-
-    nav {
-        background-color: nth($paleta, 3);
+    .boton__invisible {
+        background: none;
+        color: inherit;
+        border: none;
+        font: inherit;
+        cursor: pointer;
+        outline: none;
+        margin: 0 2vw;
     }
 
     .navLateral {
@@ -78,7 +80,7 @@ header {
                 cursor: pointer;
 
                 &:hover {
-                    transform: scale(2);
+                    transform: scale(1.1);
                     transition: transform 1s ease;
                 }
             }

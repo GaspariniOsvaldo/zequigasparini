@@ -73,11 +73,14 @@ header h1 {
   font-family: Montserrat;
   font-weight: 700;
 }
-header #btn__nav {
-  display: none;
-}
-header nav {
-  background-color: #52616b;
+header .boton__invisible {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  margin: 0 2vw;
 }
 header .navLateral {
   background-color: #52616b;
@@ -108,7 +111,7 @@ header .navLateral footer img {
   cursor: pointer;
 }
 header .navLateral footer img:hover {
-  transform: scale(2);
+  transform: scale(1.1);
   transition: transform 1s ease;
 }
 
@@ -247,7 +250,7 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
   overflow-x: hidden;
 }
 .blog__main .container__blog .articulo__blog {
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -291,6 +294,9 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
   margin: 2vh 5vw 0;
   text-align: center;
   max-width: 800px;
+}
+.blog__main .container__blog .primer__articulo {
+  height: 90vh;
 }
 
 /* Mixins de MediaQuery */
@@ -460,10 +466,29 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
   outline: none;
   border: none;
   border-bottom: 1px solid #c9d6df;
+  color: #c9d6df;
+  font-weight: 700;
+  font-family: Montserrat;
+}
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form input:focus,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button:focus,
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form textarea:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
 }
 .contacto__main .contacto__container .contacto__grid .contacto__grid--form form textarea {
   min-height: 100px;
   resize: none;
+}
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button {
+  transition: all 0.8s ease-out;
+}
+.contacto__main .contacto__container .contacto__grid .contacto__grid--form form button:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  transition: all 0.8s ease;
+  padding: 0 5px;
+  border-radius: 5px;
 }
 .contacto__main .contacto__container .contacto__grid .contacto__grid--info {
   background-color: #000;
