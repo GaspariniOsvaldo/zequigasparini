@@ -47,6 +47,7 @@ header {
 
             label {
                 @extend %nav_li;
+                cursor: pointer;
 
                 &:hover {
                     @extend %nav_li--hover;

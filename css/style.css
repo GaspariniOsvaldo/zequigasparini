@@ -89,6 +89,9 @@ header .navLateral {
 header .navLateral .navLateral__body ul {
   padding: 0;
 }
+header .navLateral .navLateral__body label {
+  cursor: pointer;
+}
 header .navLateral .navLateral__body input {
   display: none;
 }
@@ -269,7 +272,7 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
 .blog__main .container__blog .articulo__blog .articulo__blog--descripcion {
   grid-area: desc;
   display: flex;
-  margin: 20px 10px 0;
+  margin: 20px 10px 0 10px;
   padding: 10px 10px;
   flex-flow: column nowrap;
   background-color: #f0f5f9;
@@ -511,35 +514,38 @@ header .navLateral .navLateral__body ul li:hover, header .navLateral .navLateral
   padding: 0.5rem 0;
 }
 
-.error404__main {
-  height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-.error404__main h1 {
-  font-family: Montserrat, serif;
-  font-size: 10rem;
-  background-color: #c9d6df;
-  border-radius: 100px;
-  padding: 1%;
-}
-@media (max-width: 767px) {
-  .error404__main h1 {
-    font-size: 4rem;
-  }
-}
-.error404__main h2 {
-  font-family: Montserrat, serif;
-  font-weight: 700;
-  text-align: center;
-}
-.error404__main a {
-  background-color: #c9d6df;
-  padding: 2%;
-  border-radius: 20px;
-  margin: 5% 0;
-}
+/* .error404__main {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: Montserrat, serif;
+        font-size: 10rem;
+        background-color: nth($paleta, 2);
+        border-radius: 100px;
+        padding: 1%;
+
+        @include media__2disp(sm) {
+            font-size: 4rem;
+        }
+    }
+
+    h2 {
+        font-family: Montserrat, serif;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    a {
+        background-color: nth($paleta, 2);
+        padding: 2%;
+        border-radius: 20px;
+        margin: 5% 0;
+    }
+
+} */
 
 /*# sourceMappingURL=style.css.map */
