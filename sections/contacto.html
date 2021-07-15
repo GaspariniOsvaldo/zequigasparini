@@ -84,62 +84,55 @@
     </header>
 
     <main class="contacto__main">
-        <div class="contacto__container">
+        <div class="contacto__container d-grid">
 
-
-            <div class="contacto__grid d-grid">
-
-                <div class="row">
-                    <div class="contacto__grid--form d-grid col-12 col-lg-8">
-                        <h2>Contáctame</h2>
-                        <form action="../enviar.php" method="post">
-                            <div class="row">
-                                <div class="col-12 col-sm-6">
-                                    <label for="nombre">Nombre</label>
-                                    <input type="text" id="nombre" name="nombre" required>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <label for="apellido">Apellido</label>
-                                    <input type="text" id="apellido" name="apellido" required>
-                                </div>
+            <div class="row">
+                <div class="contacto__grid--form d-grid col-12 col-lg-8">
+                    <h2>Contáctame</h2>
+                    <form action="../enviar.php" method="post">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required>
                             </div>
-                            <div class="row">
-                                <div class="col-12 col-sm-6">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <label for="tel">Telefono</label>
-                                    <input type="tel" id="tel" name="tel">
-                                </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" name="apellido" required>
                             </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <label for="mensaje">Mensaje</label>
-                                    <textarea id="mensaje" rows="3" name="mensaje"></textarea>
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
                             </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <button type="submit">Enviar</button>
-                                </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="tel">Telefono</label>
+                                <input type="tel" id="tel" name="tel">
                             </div>
-                        </form>
-                    </div>
-
-                    <div class="contacto__grid--info col-12 col-lg-4">
-                        <h3>Mas info</h3>
-                        <ul>
-                            <li><img src="../media/icons/map-pin.svg" alt="Icono de mapa"> Córdoba, Argentina</li>
-                            <li><img src="../media/icons/phone.svg" alt="Icono de celular"> +54 3541xxxxxx</li>
-                            <li><img src="../media/icons/mail.svg" alt="Icono de mail"> zequigasparini@gmail.com</li>
-                        </ul>
-                    </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" rows="3" name="mensaje"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
-
+                <div class="contacto__grid--info col-12 col-lg-4">
+                    <h3>Mas info</h3>
+                    <ul>
+                        <li><img src="../media/icons/map-pin.svg" alt="Icono de mapa"> Córdoba, Argentina</li>
+                        <li><img src="../media/icons/phone.svg" alt="Icono de celular"> +54 354112345</li>
+                        <li><img src="../media/icons/mail.svg" alt="Icono de mail"> zequigaparini@gmail.com</li>
+                    </ul>
+                </div>
             </div>
-
         </div>
     </main>
 
